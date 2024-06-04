@@ -7,6 +7,15 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/slider-radio.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/plyr.css">
+	<link rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="plugins/loader/waitMe.css">
     <link rel="stylesheet" href="style.css" />
     <title>Sign in & Sign up Form</title>
   </head>
@@ -17,19 +26,26 @@
           <form action="#" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <br>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Email or username" />
+            <div class="sign__group">
+              <input name="username" required type="text" class="sign__input" placeholder="Email or Username">
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+
+            <div class="sign__group">
+              <input name="password" required type="password" class="sign__input" placeholder="Password">
             </div>
-            <br>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="hidden" name="redirect" value="none" >
+            <div class="sign__group sign__group--checkbox">
+              <input id="remember" name="remember" value="1" type="checkbox">
+              <label for="remember">Remember me for two weeks</label>
+            </div>
+
+            <button type="submit" name="submit" value="1" class="sign__btn" type="button">Access Account</button>
+
+            <span class="sign__text"> <a href="recover?t=2">Forgot password ?</a></span>
+
             <br>
             <p class="social-text">Or Sign in with</p>
-            <br>
+            
 
             <button class="signin">
               <svg
@@ -103,26 +119,38 @@ button svg {
 
 
           </form>
+
+          
           <form action="#" class="sign-up-form">
             <h2 class="title">Sign up</h2>
             <br>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+
+
+           
+
+            <div class="sign__group">
+              <input id="email" name="email" required type="email" class="sign__input" placeholder="Email Address">
+              <m class="danger f-sm" id="email_response"></m>
             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+
+            <div class="sign__group">
+              <input id="username" name="username" required type="text" class="sign__input" placeholder="Username">
+              <m class="danger f-sm" id="username_response"></m>
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+
+            <div class="sign__group">
+              <input name="password" id="id-signup-password" required type="password" class="sign__input" placeholder="Password">
             </div>
-            <br>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="hidden" name="redirect" value="none" >
+            <div class="sign__group sign__group--checkbox">
+              <input id="remember" name="remember" type="checkbox" required>
+              <label for="remember">I agree to the <a href="privacy">Privacy Policy</a></label>
+            </div>
+
+            <button type="submit" name="submit" id="app_btnf" value="1" class="sign__btn" type="button">Create Account</button>
             <br>
             <p class="social-text">Or Sign up with</p>
-            <br>
+            
 
             <button class="signin">
               <svg
