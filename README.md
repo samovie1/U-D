@@ -1,9 +1,9 @@
 # Acknowledgements
 
  - [Login and SignUp ](https://demo-ud.netlify.app/)
- - [Search Results](https://github.com/matiassingers/awesome-readme)
- - [Post Iron-Man](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - [404](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Search Results](https://demo-ud.netlify.app/search-results.html)
+ - [Post Iron-Man](https://demo-ud.netlify.app/iron-man-2008.html/)
+ - [404](https://demo-ud.netlify.app/404.html/)
 
 
 
